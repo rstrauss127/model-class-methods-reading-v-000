@@ -1613,3 +1613,9 @@ Processing by PostsController#index as HTML
   Parameters: {"utf8"=>"✓", "author"=>"14", "commit"=>"Filter"}
   Rendering posts/index.html.erb within layouts/application
   [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = 14[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 2.3ms)
+
+
