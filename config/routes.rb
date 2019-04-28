@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resource :posts
-  resource :authors
+  resources :posts
+  resources :authors
 end
