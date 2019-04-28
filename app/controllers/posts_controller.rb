@@ -17,8 +17,6 @@ class PostsController < ApplicationController
       @posts = Post.all
     end
   end
-    @posts = Post.all
-  end
 
   def show
     @post = Post.find(params[:id])
